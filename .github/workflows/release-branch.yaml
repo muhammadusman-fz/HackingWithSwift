@@ -15,6 +15,14 @@ jobs:
     name: Create a new release
     runs-on: ubuntu-latest
     steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+      - name: Create release branch
+        run: git checkout -b release-${{ github.event.inputs.versionName }}
+      - name: Initialize mandatory git config
+        run: |
+         git config user.name "Muhammad Usman"
+         git config user.email muhammad.usman@familyzone.com
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v2
@@ -24,14 +32,6 @@ jobs:
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-      - name: Check out code
-        uses: actions/checkout@v2
-      - name: Create release branch
-        run: git checkout -b release-${{ github.event.inputs.versionName }}
-      - name: Initialize mandatory git config
-        run: |
-         git config user.name "Muhammad Usman"
-         git config user.email muhammad.usman@familyzone.com
       - name: Make an empty commit
         run: |
          git config user.name github-actions
