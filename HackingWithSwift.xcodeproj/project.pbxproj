@@ -61,6 +61,10 @@
 		E438BA6C289CD437004E98A2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438BA6B289CD437004E98A2 /* Order.swift */; };
 		E438BA6E289CD8A4004E98A2 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438BA6D289CD8A4004E98A2 /* AddressView.swift */; };
 		E438BA70289CDAF4004E98A2 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438BA6F289CDAF4004E98A2 /* CheckoutView.swift */; };
+		E43986F428AF7411001938BD /* InstafilterP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43986F328AF7411001938BD /* InstafilterP.swift */; };
+		E4C2EE8F28B0A1CC004E153C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */; };
+		E4CA3DD928B33D0900E1931B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DD828B33D0900E1931B /* ImageSaver.swift */; };
+		E4CA3DDB28B33EB300E1931B /* InstaFilterMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */; };
 		E4CDF0F928A9FBA800767BBC /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4CDF0F728A9FBA800767BBC /* CoreDataProject.xcdatamodeld */; };
 		E4CDF0FB28A9FFFA00767BBC /* CoreDataDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CDF0FA28A9FFFA00767BBC /* CoreDataDataController.swift */; };
 /* End PBXBuildFile section */
@@ -140,6 +144,10 @@
 		E438BA6B289CD437004E98A2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		E438BA6D289CD8A4004E98A2 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		E438BA6F289CDAF4004E98A2 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		E43986F328AF7411001938BD /* InstafilterP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterP.swift; sourceTree = "<group>"; };
+		E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E4CA3DD828B33D0900E1931B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFilterMainView.swift; sourceTree = "<group>"; };
 		E4CDF0F828A9FBA800767BBC /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		E4CDF0FA28A9FFFA00767BBC /* CoreDataDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +183,7 @@
 				E42F80A528A4931D0030520E /* ContentView.swift */,
 				E4298F22289656C100F12CB0 /* HackingWithSwiftApp.swift */,
 				E4298F4C2896574F00F12CB0 /* Assets.xcassets */,
-				E4CDF0FC28AA310100767BBC /* Learning */,
+				E43986F228AF73E3001938BD /* Instafilter */,
 				E4CDF0F628A9FB8100767BBC /* CoreDataProject */,
 				E42F809B28A0EB8E0030520E /* Bookworm */,
 				E438BA64289BA475004E98A2 /* CupcakeCorner */,
@@ -362,6 +370,17 @@
 			path = CupcakeCorner;
 			sourceTree = "<group>";
 		};
+		E43986F228AF73E3001938BD /* Instafilter */ = {
+			isa = PBXGroup;
+			children = (
+				E43986F328AF7411001938BD /* InstafilterP.swift */,
+				E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */,
+				E4CA3DD828B33D0900E1931B /* ImageSaver.swift */,
+				E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */,
+			);
+			path = Instafilter;
+			sourceTree = "<group>";
+		};
 		E4CDF0F628A9FB8100767BBC /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,13 +388,6 @@
 				E4CDF0FA28A9FFFA00767BBC /* CoreDataDataController.swift */,
 			);
 			path = CoreDataProject;
-			sourceTree = "<group>";
-		};
-		E4CDF0FC28AA310100767BBC /* Learning */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Learning;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +525,7 @@
 				E438BA5D289B59D6004E98A2 /* Activity.swift in Sources */,
 				E4298F612896575000F12CB0 /* GuessTheFlagScreenView.swift in Sources */,
 				E42F80AE28A4E5A70030520E /* BookwormDetailView.swift in Sources */,
+				E4C2EE8F28B0A1CC004E153C /* ImagePicker.swift in Sources */,
 				E438BA61289B63DF004E98A2 /* Activities.swift in Sources */,
 				E42F80AA28A4C8600030520E /* RatingView.swift in Sources */,
 				E4298F632896575000F12CB0 /* WordScrambleView.swift in Sources */,
@@ -524,6 +537,7 @@
 				E4298F23289656C100F12CB0 /* HackingWithSwiftApp.swift in Sources */,
 				E438BA49289A1F5B004E98A2 /* Astronaut.swift in Sources */,
 				E438BA56289A6739004E98A2 /* MissionDescriptionView.swift in Sources */,
+				E43986F428AF7411001938BD /* InstafilterP.swift in Sources */,
 				E4CDF0F928A9FBA800767BBC /* CoreDataProject.xcdatamodeld in Sources */,
 				E438BA58289A6D82004E98A2 /* MissionCardView.swift in Sources */,
 				E4298F652896575000F12CB0 /* UnitConverterView.swift in Sources */,
@@ -531,6 +545,7 @@
 				E438BA43289A0F99004E98A2 /* MoonshotMainView.swift in Sources */,
 				E4298FAA2898CABD00F12CB0 /* iExpenseMainView.swift in Sources */,
 				E4298F5E2896575000F12CB0 /* BetterRestPractice.swift in Sources */,
+				E4CA3DD928B33D0900E1931B /* ImageSaver.swift in Sources */,
 				E438BA6A289BAFEC004E98A2 /* CupcakeCornerPractice.swift in Sources */,
 				E4CDF0FB28A9FFFA00767BBC /* CoreDataDataController.swift in Sources */,
 				E4298FA52897A8FD00F12CB0 /* EdutainmentView.swift in Sources */,
@@ -544,6 +559,7 @@
 				E4298FA72897BB3C00F12CB0 /* Question.swift in Sources */,
 				E42F80A628A4931E0030520E /* ContentView.swift in Sources */,
 				E438BA4028994183004E98A2 /* EdutainmentLaunchScreen.swift in Sources */,
+				E4CA3DDB28B33EB300E1931B /* InstaFilterMainView.swift in Sources */,
 				E4298F692896580E00F12CB0 /* SleepCalculator.mlmodel in Sources */,
 				E4298FA22897670600F12CB0 /* AnimationViewP.swift in Sources */,
 				E438BA4F289A48D3004E98A2 /* MissionDetailView.swift in Sources */,
@@ -720,6 +736,7 @@
 				DEVELOPMENT_TEAM = 5S77G864UH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -750,6 +767,7 @@
 				DEVELOPMENT_TEAM = 5S77G864UH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save the filtered photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

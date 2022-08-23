@@ -13,7 +13,7 @@ struct Project: Identifiable {
 }
 
 struct ContentView: View {
-    @State private var projects = ["Bookworm", "We Split", "Guess the Flag", "Word Scramble", "Rock Paper Scissor", "Better Rest", "Animations", "Edutainment", "iExpense", "Moonshot", "Habit Tracking", "Cupcake Corner"
+    @State private var projects = ["Insta Filter","Bookworm", "We Split", "Guess the Flag", "Word Scramble", "Rock Paper Scissor", "Better Rest", "Animations", "Edutainment", "iExpense", "Moonshot", "Habit Tracking", "Cupcake Corner"
     ]
     
     let columns = [
@@ -27,6 +27,8 @@ struct ContentView: View {
                     ForEach(projects, id: \.self) { project in
                         NavigationLink {
                             switch(project) {
+                            case "Insta Filter":
+                                InstaFilterMainView()
                             case "We Split":
                                 WeSplitView()
                             case "Guess the Flag":
