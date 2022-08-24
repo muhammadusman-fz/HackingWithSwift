@@ -21,8 +21,8 @@ jobs:
         run: git checkout -b release-${{ github.event.inputs.versionName }}
       - name: Initialize mandatory git config
         run: |
-         git config user.name "Muhammad Usman"
-         git config user.email muhammad.usman@familyzone.com
+         git config user.name "GitHub Actions"
+         git config user.email noreply@github.com
       - name: Import GPG key
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v2
