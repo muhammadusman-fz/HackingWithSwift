@@ -35,7 +35,7 @@ jobs:
       - name: Make an empty commit
         run: |
          git config user.name github-actions
-         git config user.email github-muhammad.usman@familyzone.com
+         git config user.email muhammad.usman@familyzone.com
          git commit --allow-empty --message "Created release-${{ github.event.inputs.versionName }}"
       - name: Push new branch
         run: git push origin release-${{ github.event.inputs.versionName }}
