@@ -35,7 +35,6 @@ struct UserDetailView: View {
         }
         .listStyle(.grouped)
         .navigationTitle(user.name)
-        .preferredColorScheme(.light)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

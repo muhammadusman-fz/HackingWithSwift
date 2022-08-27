@@ -25,13 +25,13 @@ struct FriendFaceView: View {
             }
         }
         .navigationTitle("Friendface")
-        .preferredColorScheme(.light)
         .task {
             await loadUsers()
         }
     }
     
     private func loadUsers() async {
+        guard users.isEmpty else { return }
         guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json")  else {
             print("Inavalid url")
             return
