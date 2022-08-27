@@ -7,6 +7,8 @@
 
 import SwiftUI
 /// Adding conformance to Compareable for custom types
+/// Writing data to the documents directory
+/// 
 
 struct Student: Identifiable, Comparable {
     let id = UUID()
@@ -25,9 +27,29 @@ struct BucketListP: View {
     Student(firstName: "Zia", lastName: "Ali")
     ].sorted()
     var body: some View {
-        List(students) { student in
-            Text("\(student.firstName) \(student.lastName)")
+        VStack {
+            List(students) { student in
+                Text("\(student.firstName) \(student.lastName)")
+            }
+            
+            Button("Read & Write") {
+                let url = getDocumentsDirectory().appendingPathComponent("BucketListP.txt")
+                let message = "Hello World"
+                do {
+                    try message.write(to: url, atomically: true, encoding: .utf8)
+                    let input = try String(contentsOf: url)
+                    print(input)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
         }
+    }
+    
+    func getDocumentsDirectory() -> URL {
+        // find all possible documents directories for this user
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
     }
 }
 

@@ -63,6 +63,11 @@
 		E438BA70289CDAF4004E98A2 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E438BA6F289CDAF4004E98A2 /* CheckoutView.swift */; };
 		E43986F428AF7411001938BD /* InstafilterP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43986F328AF7411001938BD /* InstafilterP.swift */; };
 		E4841ED328B5E512002C17A6 /* BucketListP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841ED228B5E512002C17A6 /* BucketListP.swift */; };
+		E4841ED628B6F56A002C17A6 /* FriendFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841ED528B6F56A002C17A6 /* FriendFaceView.swift */; };
+		E4841ED828B6FBF1002C17A6 /* FriendFace-Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841ED728B6FBF1002C17A6 /* FriendFace-Data.swift */; };
+		E4841EDB28B872A4002C17A6 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EDA28B872A4002C17A6 /* MeetingView.swift */; };
+		E4841EDE28B8AE2C002C17A6 /* AccessibilityMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EDD28B8AE2C002C17A6 /* AccessibilityMainView.swift */; };
+		E4841EE028B9FE1E002C17A6 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EDF28B9FE1E002C17A6 /* UserDetailView.swift */; };
 		E4C2EE8F28B0A1CC004E153C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */; };
 		E4CA3DD928B33D0900E1931B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DD828B33D0900E1931B /* ImageSaver.swift */; };
 		E4CA3DDB28B33EB300E1931B /* InstaFilterMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */; };
@@ -147,6 +152,11 @@
 		E438BA6F289CDAF4004E98A2 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		E43986F328AF7411001938BD /* InstafilterP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterP.swift; sourceTree = "<group>"; };
 		E4841ED228B5E512002C17A6 /* BucketListP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListP.swift; sourceTree = "<group>"; };
+		E4841ED528B6F56A002C17A6 /* FriendFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceView.swift; sourceTree = "<group>"; };
+		E4841ED728B6FBF1002C17A6 /* FriendFace-Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendFace-Data.swift"; sourceTree = "<group>"; };
+		E4841EDA28B872A4002C17A6 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		E4841EDD28B8AE2C002C17A6 /* AccessibilityMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityMainView.swift; sourceTree = "<group>"; };
+		E4841EDF28B9FE1E002C17A6 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E4CA3DD828B33D0900E1931B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFilterMainView.swift; sourceTree = "<group>"; };
@@ -182,9 +192,12 @@
 		E4298F16289656C100F12CB0 = {
 			isa = PBXGroup;
 			children = (
+				E4841EDC28B8AB69002C17A6 /* AccessibilityService */,
 				E42F80A528A4931D0030520E /* ContentView.swift */,
 				E4298F22289656C100F12CB0 /* HackingWithSwiftApp.swift */,
 				E4298F4C2896574F00F12CB0 /* Assets.xcassets */,
+				E4841ED928B87259002C17A6 /* ScrumDinger */,
+				E4841ED428B6F54F002C17A6 /* FriendFace-Challenge */,
 				E4841ED128B5E4F8002C17A6 /* BucketList */,
 				E43986F228AF73E3001938BD /* Instafilter */,
 				E4CDF0F628A9FB8100767BBC /* CoreDataProject */,
@@ -392,6 +405,32 @@
 			path = BucketList;
 			sourceTree = "<group>";
 		};
+		E4841ED428B6F54F002C17A6 /* FriendFace-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				E4841ED528B6F56A002C17A6 /* FriendFaceView.swift */,
+				E4841ED728B6FBF1002C17A6 /* FriendFace-Data.swift */,
+				E4841EDF28B9FE1E002C17A6 /* UserDetailView.swift */,
+			);
+			path = "FriendFace-Challenge";
+			sourceTree = "<group>";
+		};
+		E4841ED928B87259002C17A6 /* ScrumDinger */ = {
+			isa = PBXGroup;
+			children = (
+				E4841EDA28B872A4002C17A6 /* MeetingView.swift */,
+			);
+			path = ScrumDinger;
+			sourceTree = "<group>";
+		};
+		E4841EDC28B8AB69002C17A6 /* AccessibilityService */ = {
+			isa = PBXGroup;
+			children = (
+				E4841EDD28B8AE2C002C17A6 /* AccessibilityMainView.swift */,
+			);
+			path = AccessibilityService;
+			sourceTree = "<group>";
+		};
 		E4CDF0F628A9FB8100767BBC /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
@@ -539,7 +578,9 @@
 				E4C2EE8F28B0A1CC004E153C /* ImagePicker.swift in Sources */,
 				E438BA61289B63DF004E98A2 /* Activities.swift in Sources */,
 				E42F80AA28A4C8600030520E /* RatingView.swift in Sources */,
+				E4841EE028B9FE1E002C17A6 /* UserDetailView.swift in Sources */,
 				E4298F632896575000F12CB0 /* WordScrambleView.swift in Sources */,
+				E4841ED828B6FBF1002C17A6 /* FriendFace-Data.swift in Sources */,
 				E438BA4D289A21B2004E98A2 /* Mission.swift in Sources */,
 				E438BA54289A6654004E98A2 /* CrewMemberView.swift in Sources */,
 				E438BA6E289CD8A4004E98A2 /* AddressView.swift in Sources */,
@@ -558,12 +599,14 @@
 				E4298F5E2896575000F12CB0 /* BetterRestPractice.swift in Sources */,
 				E4CA3DD928B33D0900E1931B /* ImageSaver.swift in Sources */,
 				E438BA6A289BAFEC004E98A2 /* CupcakeCornerPractice.swift in Sources */,
+				E4841EDE28B8AE2C002C17A6 /* AccessibilityMainView.swift in Sources */,
 				E4CDF0FB28A9FFFA00767BBC /* CoreDataDataController.swift in Sources */,
 				E4298FA52897A8FD00F12CB0 /* EdutainmentView.swift in Sources */,
 				E438BA4B289A1FA8004E98A2 /* Extensions.swift in Sources */,
 				E42F809F28A1F9730030520E /* BookwormPracticeView.swift in Sources */,
 				E4298F672896575000F12CB0 /* WeSplitView.swift in Sources */,
 				E4298F622896575000F12CB0 /* GuessTheFlagPractice.swift in Sources */,
+				E4841EDB28B872A4002C17A6 /* MeetingView.swift in Sources */,
 				E42F80A228A486180030520E /* Bookworm.xcdatamodeld in Sources */,
 				E438BA5F289B5B12004E98A2 /* AddActivityView.swift in Sources */,
 				E438BA70289CDAF4004E98A2 /* CheckoutView.swift in Sources */,
@@ -587,6 +630,7 @@
 				E4298FAE2898DEEA00F12CB0 /* AddExpenseItemView.swift in Sources */,
 				E4298F602896575000F12CB0 /* GameScreenView.swift in Sources */,
 				E438BA51289A5869004E98A2 /* AstronautView.swift in Sources */,
+				E4841ED628B6F56A002C17A6 /* FriendFaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,6 +798,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -785,6 +830,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
