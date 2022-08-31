@@ -65,9 +65,12 @@
 		E4841ED328B5E512002C17A6 /* BucketListP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841ED228B5E512002C17A6 /* BucketListP.swift */; };
 		E4841ED628B6F56A002C17A6 /* FriendFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841ED528B6F56A002C17A6 /* FriendFaceView.swift */; };
 		E4841ED828B6FBF1002C17A6 /* FriendFace-Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841ED728B6FBF1002C17A6 /* FriendFace-Data.swift */; };
-		E4841EDB28B872A4002C17A6 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EDA28B872A4002C17A6 /* MeetingView.swift */; };
 		E4841EDE28B8AE2C002C17A6 /* AccessibilityMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EDD28B8AE2C002C17A6 /* AccessibilityMainView.swift */; };
 		E4841EE028B9FE1E002C17A6 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EDF28B9FE1E002C17A6 /* UserDetailView.swift */; };
+		E4841EE328BA503C002C17A6 /* MeetupFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE228BA503C002C17A6 /* MeetupFriendView.swift */; };
+		E4841EE528BA52B4002C17A6 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE428BA52B4002C17A6 /* PhotoPicker.swift */; };
+		E4841EE828BD8FE8002C17A6 /* HotProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE728BD8FE8002C17A6 /* HotProspectsView.swift */; };
+		E4841EEA28BDC668002C17A6 /* HotProspectP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE928BDC668002C17A6 /* HotProspectP.swift */; };
 		E4C2EE8F28B0A1CC004E153C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */; };
 		E4CA3DD928B33D0900E1931B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DD828B33D0900E1931B /* ImageSaver.swift */; };
 		E4CA3DDB28B33EB300E1931B /* InstaFilterMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */; };
@@ -154,9 +157,12 @@
 		E4841ED228B5E512002C17A6 /* BucketListP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListP.swift; sourceTree = "<group>"; };
 		E4841ED528B6F56A002C17A6 /* FriendFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceView.swift; sourceTree = "<group>"; };
 		E4841ED728B6FBF1002C17A6 /* FriendFace-Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FriendFace-Data.swift"; sourceTree = "<group>"; };
-		E4841EDA28B872A4002C17A6 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		E4841EDD28B8AE2C002C17A6 /* AccessibilityMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityMainView.swift; sourceTree = "<group>"; };
 		E4841EDF28B9FE1E002C17A6 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
+		E4841EE228BA503C002C17A6 /* MeetupFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupFriendView.swift; sourceTree = "<group>"; };
+		E4841EE428BA52B4002C17A6 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		E4841EE728BD8FE8002C17A6 /* HotProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsView.swift; sourceTree = "<group>"; };
+		E4841EE928BDC668002C17A6 /* HotProspectP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectP.swift; sourceTree = "<group>"; };
 		E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E4CA3DD828B33D0900E1931B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFilterMainView.swift; sourceTree = "<group>"; };
@@ -192,11 +198,12 @@
 		E4298F16289656C100F12CB0 = {
 			isa = PBXGroup;
 			children = (
-				E4841EDC28B8AB69002C17A6 /* AccessibilityService */,
+				E4841EE628BD8FC0002C17A6 /* Hot Prospects */,
 				E42F80A528A4931D0030520E /* ContentView.swift */,
 				E4298F22289656C100F12CB0 /* HackingWithSwiftApp.swift */,
+				E4841EE128BA5017002C17A6 /* MeetupFriend-Challenge */,
+				E4841EDC28B8AB69002C17A6 /* AccessibilityService */,
 				E4298F4C2896574F00F12CB0 /* Assets.xcassets */,
-				E4841ED928B87259002C17A6 /* ScrumDinger */,
 				E4841ED428B6F54F002C17A6 /* FriendFace-Challenge */,
 				E4841ED128B5E4F8002C17A6 /* BucketList */,
 				E43986F228AF73E3001938BD /* Instafilter */,
@@ -415,20 +422,30 @@
 			path = "FriendFace-Challenge";
 			sourceTree = "<group>";
 		};
-		E4841ED928B87259002C17A6 /* ScrumDinger */ = {
-			isa = PBXGroup;
-			children = (
-				E4841EDA28B872A4002C17A6 /* MeetingView.swift */,
-			);
-			path = ScrumDinger;
-			sourceTree = "<group>";
-		};
 		E4841EDC28B8AB69002C17A6 /* AccessibilityService */ = {
 			isa = PBXGroup;
 			children = (
 				E4841EDD28B8AE2C002C17A6 /* AccessibilityMainView.swift */,
 			);
 			path = AccessibilityService;
+			sourceTree = "<group>";
+		};
+		E4841EE128BA5017002C17A6 /* MeetupFriend-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				E4841EE228BA503C002C17A6 /* MeetupFriendView.swift */,
+				E4841EE428BA52B4002C17A6 /* PhotoPicker.swift */,
+			);
+			path = "MeetupFriend-Challenge";
+			sourceTree = "<group>";
+		};
+		E4841EE628BD8FC0002C17A6 /* Hot Prospects */ = {
+			isa = PBXGroup;
+			children = (
+				E4841EE728BD8FE8002C17A6 /* HotProspectsView.swift */,
+				E4841EE928BDC668002C17A6 /* HotProspectP.swift */,
+			);
+			path = "Hot Prospects";
 			sourceTree = "<group>";
 		};
 		E4CDF0F628A9FB8100767BBC /* CoreDataProject */ = {
@@ -580,6 +597,7 @@
 				E42F80AA28A4C8600030520E /* RatingView.swift in Sources */,
 				E4841EE028B9FE1E002C17A6 /* UserDetailView.swift in Sources */,
 				E4298F632896575000F12CB0 /* WordScrambleView.swift in Sources */,
+				E4841EE528BA52B4002C17A6 /* PhotoPicker.swift in Sources */,
 				E4841ED828B6FBF1002C17A6 /* FriendFace-Data.swift in Sources */,
 				E438BA4D289A21B2004E98A2 /* Mission.swift in Sources */,
 				E438BA54289A6654004E98A2 /* CrewMemberView.swift in Sources */,
@@ -606,13 +624,13 @@
 				E42F809F28A1F9730030520E /* BookwormPracticeView.swift in Sources */,
 				E4298F672896575000F12CB0 /* WeSplitView.swift in Sources */,
 				E4298F622896575000F12CB0 /* GuessTheFlagPractice.swift in Sources */,
-				E4841EDB28B872A4002C17A6 /* MeetingView.swift in Sources */,
 				E42F80A228A486180030520E /* Bookworm.xcdatamodeld in Sources */,
 				E438BA5F289B5B12004E98A2 /* AddActivityView.swift in Sources */,
 				E438BA70289CDAF4004E98A2 /* CheckoutView.swift in Sources */,
 				E4298FA72897BB3C00F12CB0 /* Question.swift in Sources */,
 				E42F80A628A4931E0030520E /* ContentView.swift in Sources */,
 				E438BA4028994183004E98A2 /* EdutainmentLaunchScreen.swift in Sources */,
+				E4841EE828BD8FE8002C17A6 /* HotProspectsView.swift in Sources */,
 				E4CA3DDB28B33EB300E1931B /* InstaFilterMainView.swift in Sources */,
 				E4298F692896580E00F12CB0 /* SleepCalculator.mlmodel in Sources */,
 				E4298FA22897670600F12CB0 /* AnimationViewP.swift in Sources */,
@@ -623,7 +641,9 @@
 				E4841ED328B5E512002C17A6 /* BucketListP.swift in Sources */,
 				E438BA66289BA49A004E98A2 /* CupcakeCornerMainView.swift in Sources */,
 				E42F80AC28A4E3280030520E /* EmojiRatingView.swift in Sources */,
+				E4841EEA28BDC668002C17A6 /* HotProspectP.swift in Sources */,
 				E4298F5F2896575000F12CB0 /* BetterRestMainView.swift in Sources */,
+				E4841EE328BA503C002C17A6 /* MeetupFriendView.swift in Sources */,
 				E438BA6C289CD437004E98A2 /* Order.swift in Sources */,
 				E4298FB22898DF0400F12CB0 /* Expenses.swift in Sources */,
 				E438BA5B289AA29C004E98A2 /* HabitTrackingMainView.swift in Sources */,
