@@ -1,5 +1,5 @@
 //
-//  HotProspectP.swift
+//  HotProspectP1.swift
 //  SwiftUI 100
 //
 //  Created by Muhammad Usman on 30/8/2022.
@@ -49,10 +49,10 @@ class DelayedUpdater: ObservableObject {
 /// Practice
 /// 1. Use of property wrapper EnvironmentObject to share the data between different views
 /// 2. Use of TabView and switch between different tabs programatically
-/// 3. Manually publishing ObservableObject changes
+/// 3. Manually publishing ObservableObject changes with the help of objectwillchange.send()
 /// 4. Understanding Result type
 
-struct HotProspectP: View {
+struct HotProspectP1: View {
     @StateObject var user = HotProspect_User()
     
     @State private var selectedTab = "One"
@@ -73,13 +73,12 @@ struct HotProspectP: View {
                 .task {
                     await fetchReadings()
                 }
-            
             TabView(selection: $selectedTab) {
                 ZStack {
                     VStack(spacing: 50) {
                         Image(systemName: "1.circle.fill")
                             .resizable()
-                            .frame(width: 140, height: 140)
+                            .frame(width: 50, height: 50)
                             .overlay(Circle().strokeBorder(.blue, lineWidth: 4))
                         
                         Text("Content of tab one")
@@ -101,7 +100,7 @@ struct HotProspectP: View {
                     VStack(spacing: 50) {
                         Image(systemName: "2.circle.fill")
                             .resizable()
-                            .frame(width: 140, height: 150)
+                            .frame(width: 50, height: 50)
                         
                         Text("Content of tab two")
                         
@@ -142,6 +141,6 @@ struct HotProspectP: View {
 
 struct HotProspectP_Previews: PreviewProvider {
     static var previews: some View {
-        HotProspectP()
+        HotProspectP1()
     }
 }

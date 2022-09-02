@@ -30,6 +30,9 @@
 		E4298FAE2898DEEA00F12CB0 /* AddExpenseItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4298FAD2898DEEA00F12CB0 /* AddExpenseItemView.swift */; };
 		E4298FB02898DEF700F12CB0 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4298FAF2898DEF700F12CB0 /* ExpenseItem.swift */; };
 		E4298FB22898DF0400F12CB0 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4298FB12898DF0400F12CB0 /* Expenses.swift */; };
+		E42DB5FA28C19F9D0086E153 /* ProspectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DB5F928C19F9D0086E153 /* ProspectView.swift */; };
+		E42DB5FC28C19FA80086E153 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DB5FB28C19FA80086E153 /* MeView.swift */; };
+		E42DB5FF28C1A6C90086E153 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42DB5FE28C1A6C90086E153 /* Prospect.swift */; };
 		E42F809D28A0EBB10030520E /* BookwormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42F809C28A0EBB10030520E /* BookwormView.swift */; };
 		E42F809F28A1F9730030520E /* BookwormPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42F809E28A1F9730030520E /* BookwormPracticeView.swift */; };
 		E42F80A228A486180030520E /* Bookworm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E42F80A028A486180030520E /* Bookworm.xcdatamodeld */; };
@@ -69,8 +72,10 @@
 		E4841EE028B9FE1E002C17A6 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EDF28B9FE1E002C17A6 /* UserDetailView.swift */; };
 		E4841EE328BA503C002C17A6 /* MeetupFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE228BA503C002C17A6 /* MeetupFriendView.swift */; };
 		E4841EE528BA52B4002C17A6 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE428BA52B4002C17A6 /* PhotoPicker.swift */; };
-		E4841EE828BD8FE8002C17A6 /* HotProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE728BD8FE8002C17A6 /* HotProspectsView.swift */; };
-		E4841EEA28BDC668002C17A6 /* HotProspectP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE928BDC668002C17A6 /* HotProspectP.swift */; };
+		E4841EE828BD8FE8002C17A6 /* HotProspectsMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE728BD8FE8002C17A6 /* HotProspectsMainView.swift */; };
+		E4841EEA28BDC668002C17A6 /* HotProspectP1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841EE928BDC668002C17A6 /* HotProspectP1.swift */; };
+		E4841F0D28C06238002C17A6 /* HotProspectP2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4841F0C28C06238002C17A6 /* HotProspectP2.swift */; };
+		E4841F1028C06A7E002C17A6 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = E4841F0F28C06A7E002C17A6 /* SamplePackage */; };
 		E4C2EE8F28B0A1CC004E153C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */; };
 		E4CA3DD928B33D0900E1931B /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DD828B33D0900E1931B /* ImageSaver.swift */; };
 		E4CA3DDB28B33EB300E1931B /* InstaFilterMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */; };
@@ -122,6 +127,9 @@
 		E4298FAD2898DEEA00F12CB0 /* AddExpenseItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseItemView.swift; sourceTree = "<group>"; };
 		E4298FAF2898DEF700F12CB0 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
 		E4298FB12898DF0400F12CB0 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		E42DB5F928C19F9D0086E153 /* ProspectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectView.swift; sourceTree = "<group>"; };
+		E42DB5FB28C19FA80086E153 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		E42DB5FE28C1A6C90086E153 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		E42F809C28A0EBB10030520E /* BookwormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormView.swift; sourceTree = "<group>"; };
 		E42F809E28A1F9730030520E /* BookwormPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookwormPracticeView.swift; sourceTree = "<group>"; };
 		E42F80A128A486180030520E /* Bookworm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookworm.xcdatamodel; sourceTree = "<group>"; };
@@ -161,8 +169,9 @@
 		E4841EDF28B9FE1E002C17A6 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		E4841EE228BA503C002C17A6 /* MeetupFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupFriendView.swift; sourceTree = "<group>"; };
 		E4841EE428BA52B4002C17A6 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
-		E4841EE728BD8FE8002C17A6 /* HotProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsView.swift; sourceTree = "<group>"; };
-		E4841EE928BDC668002C17A6 /* HotProspectP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectP.swift; sourceTree = "<group>"; };
+		E4841EE728BD8FE8002C17A6 /* HotProspectsMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsMainView.swift; sourceTree = "<group>"; };
+		E4841EE928BDC668002C17A6 /* HotProspectP1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectP1.swift; sourceTree = "<group>"; };
+		E4841F0C28C06238002C17A6 /* HotProspectP2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectP2.swift; sourceTree = "<group>"; };
 		E4C2EE8E28B0A1CC004E153C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E4CA3DD828B33D0900E1931B /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		E4CA3DDA28B33EB300E1931B /* InstaFilterMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaFilterMainView.swift; sourceTree = "<group>"; };
@@ -175,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4841F1028C06A7E002C17A6 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +338,23 @@
 			path = iExpense;
 			sourceTree = "<group>";
 		};
+		E42DB5F828C19F810086E153 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				E42DB5F928C19F9D0086E153 /* ProspectView.swift */,
+				E42DB5FB28C19FA80086E153 /* MeView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		E42DB5FD28C1A6BB0086E153 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E42DB5FE28C1A6C90086E153 /* Prospect.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E42F809B28A0EB8E0030520E /* Bookworm */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,8 +469,11 @@
 		E4841EE628BD8FC0002C17A6 /* Hot Prospects */ = {
 			isa = PBXGroup;
 			children = (
-				E4841EE728BD8FE8002C17A6 /* HotProspectsView.swift */,
-				E4841EE928BDC668002C17A6 /* HotProspectP.swift */,
+				E42DB5FD28C1A6BB0086E153 /* Model */,
+				E42DB5F828C19F810086E153 /* SubViews */,
+				E4841EE728BD8FE8002C17A6 /* HotProspectsMainView.swift */,
+				E4841EE928BDC668002C17A6 /* HotProspectP1.swift */,
+				E4841F0C28C06238002C17A6 /* HotProspectP2.swift */,
 			);
 			path = "Hot Prospects";
 			sourceTree = "<group>";
@@ -473,6 +503,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI 100";
+			packageProductDependencies = (
+				E4841F0F28C06A7E002C17A6 /* SamplePackage */,
+			);
 			productName = HackingWithSwift;
 			productReference = E4298F1F289656C100F12CB0 /* SwiftUI 100.app */;
 			productType = "com.apple.product-type.application";
@@ -545,6 +578,9 @@
 				Base,
 			);
 			mainGroup = E4298F16289656C100F12CB0;
+			packageReferences = (
+				E4841F0E28C06A7E002C17A6 /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = E4298F20289656C100F12CB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -608,11 +644,13 @@
 				E438BA49289A1F5B004E98A2 /* Astronaut.swift in Sources */,
 				E438BA56289A6739004E98A2 /* MissionDescriptionView.swift in Sources */,
 				E43986F428AF7411001938BD /* InstafilterP.swift in Sources */,
+				E42DB5FF28C1A6C90086E153 /* Prospect.swift in Sources */,
 				E4CDF0F928A9FBA800767BBC /* CoreDataProject.xcdatamodeld in Sources */,
 				E438BA58289A6D82004E98A2 /* MissionCardView.swift in Sources */,
 				E4298F652896575000F12CB0 /* UnitConverterView.swift in Sources */,
 				E438BA63289B8A6F004E98A2 /* ActivityDetailView.swift in Sources */,
 				E438BA43289A0F99004E98A2 /* MoonshotMainView.swift in Sources */,
+				E42DB5FA28C19F9D0086E153 /* ProspectView.swift in Sources */,
 				E4298FAA2898CABD00F12CB0 /* iExpenseMainView.swift in Sources */,
 				E4298F5E2896575000F12CB0 /* BetterRestPractice.swift in Sources */,
 				E4CA3DD928B33D0900E1931B /* ImageSaver.swift in Sources */,
@@ -630,7 +668,7 @@
 				E4298FA72897BB3C00F12CB0 /* Question.swift in Sources */,
 				E42F80A628A4931E0030520E /* ContentView.swift in Sources */,
 				E438BA4028994183004E98A2 /* EdutainmentLaunchScreen.swift in Sources */,
-				E4841EE828BD8FE8002C17A6 /* HotProspectsView.swift in Sources */,
+				E4841EE828BD8FE8002C17A6 /* HotProspectsMainView.swift in Sources */,
 				E4CA3DDB28B33EB300E1931B /* InstaFilterMainView.swift in Sources */,
 				E4298F692896580E00F12CB0 /* SleepCalculator.mlmodel in Sources */,
 				E4298FA22897670600F12CB0 /* AnimationViewP.swift in Sources */,
@@ -641,16 +679,18 @@
 				E4841ED328B5E512002C17A6 /* BucketListP.swift in Sources */,
 				E438BA66289BA49A004E98A2 /* CupcakeCornerMainView.swift in Sources */,
 				E42F80AC28A4E3280030520E /* EmojiRatingView.swift in Sources */,
-				E4841EEA28BDC668002C17A6 /* HotProspectP.swift in Sources */,
+				E4841EEA28BDC668002C17A6 /* HotProspectP1.swift in Sources */,
 				E4298F5F2896575000F12CB0 /* BetterRestMainView.swift in Sources */,
 				E4841EE328BA503C002C17A6 /* MeetupFriendView.swift in Sources */,
 				E438BA6C289CD437004E98A2 /* Order.swift in Sources */,
 				E4298FB22898DF0400F12CB0 /* Expenses.swift in Sources */,
 				E438BA5B289AA29C004E98A2 /* HabitTrackingMainView.swift in Sources */,
 				E4298FAE2898DEEA00F12CB0 /* AddExpenseItemView.swift in Sources */,
+				E4841F0D28C06238002C17A6 /* HotProspectP2.swift in Sources */,
 				E4298F602896575000F12CB0 /* GameScreenView.swift in Sources */,
 				E438BA51289A5869004E98A2 /* AstronautView.swift in Sources */,
 				E4841ED628B6F56A002C17A6 /* FriendFaceView.swift in Sources */,
+				E42DB5FC28C19FA80086E153 /* MeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -981,6 +1021,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E4841F0E28C06A7E002C17A6 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E4841F0F28C06A7E002C17A6 /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E4841F0E28C06A7E002C17A6 /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E42F80A028A486180030520E /* Bookworm.xcdatamodeld */ = {
