@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct ProspectView: View {
     enum FilterType {
@@ -41,17 +42,80 @@ struct ProspectView: View {
         VStack {
             List {
                 ForEach(filteredProspects) { prospect in
-                    VStack(alignment: .leading) {
-                        Text(prospect.name)
-                            .font(.headline)
-                        Text(prospect.email)
-                            .foregroundColor(.secondary)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(prospect.name)
+                                .font(.headline)
+                            Text(prospect.email)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        if prospect.connected == true {
+                            Spacer()
+                            Image(systemName: "checkmark.circle.fill")
+                        }
+                    }
+                    .swipeActions {
+                        if prospect.connected {
+                            Button {
+                                prospects.toggle(prospect)
+                            } label: {
+                                 Label("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark")
+                            }
+                            .tint(.blue)
+                        } else {
+                            Button {
+                                prospects.toggle(prospect)
+                            } label: {
+                                 Label("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark")
+                            }
+                            .tint(.green)
+                            
+                            Button {
+                                addNotifications(for: prospect)
+                            } label: {
+                                Label("Remind Me", systemImage: "bell")
+                            }
+                            .tint(.orange)
+                        }
                     }
                 }
             }
         }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    func addNotifications(for prospect: Prospect) {
+        let center = UNUserNotificationCenter.current()
+        let addRequest = {
+            let content = UNMutableNotificationContent()
+            content.title = "Contact \(prospect.name)"
+            content.subtitle = prospect.email
+            content.sound = .default
+            
+            var dateComponents = DateComponents()
+            dateComponents.hour = 9
+//            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            center.add(request)
+        }
+        
+        center.getNotificationSettings { settings in
+            if settings.authorizationStatus == .authorized {
+                addRequest()
+            } else {
+                center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        addRequest()
+                    } else {
+                        print("D'oh")
+                    }
+                }
+            }
+        }
     }
 }
 

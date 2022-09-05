@@ -5,10 +5,14 @@
 //  Created by Muhammad Usman on 30/8/2022.
 //
 
+import CodeScanner
 import SwiftUI
 
 struct HotProspectsMainView: View {
+    
     @StateObject var prospects = Prospects()
+    @State private var isShowingScanner = false
+    
     var body: some View {
         VStack {
             TabView {
@@ -33,6 +37,24 @@ struct HotProspectsMainView: View {
                     }
             }
             .environmentObject(prospects)
+            .sheet(isPresented: $isShowingScanner) {
+                CodeScannerView(codeTypes: [.qr], simulatedData: "Muhammad Usman\nmaaniappdeveloper@gmail.com", completion: { result in
+                    isShowingScanner = false
+                    switch result {
+                    case .success(let result):
+                        let details = result.string.components(separatedBy: "\n")
+                        guard details.count == 2 else { return }
+                        
+                        let person = Prospect()
+                        person.name = details[0]
+                        person.email = details[1]
+                        prospects.add(person)
+                        
+                    case .failure(let error):
+                        print("Scanning failed: \(error.localizedDescription)")
+                    }
+                })
+            }
         }
         .navigationTitle("HotProspect")
         .navigationBarTitleDisplayMode(.inline)
@@ -55,10 +77,7 @@ struct HotProspectsMainView: View {
             
             ToolbarItem {
                 Button {
-                    let prospect = Prospect()
-                    prospect.name = "Muhammad Usman"
-                    prospect.email = "maaniappdeveloper@gmail.com"
-                    prospects.people.append(prospect)
+                    isShowingScanner = true
                 } label: {
                     Label("Scan", systemImage: "qrcode.viewfinder")
                 }
