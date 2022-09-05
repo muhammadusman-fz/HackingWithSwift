@@ -19,8 +19,21 @@ class Prospect: Identifiable, Codable {
     @Published private(set) var people: [Prospect]
      
      let key = "HotProspectData"
+     
+     let savePath = FileManager.documentDirectory.appendingPathComponent("HotProspectData")
+     
+//     init() {
+//         if let data  = UserDefaults.standard.data(forKey: key) {
+//             if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
+//                 people = decoded
+//                 return
+//             }
+//         }
+//
+//         self.people = []
+//     }
      init() {
-         if let data  = UserDefaults.standard.data(forKey: key) {
+         if let data  = try? Data(contentsOf: savePath) {
              if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
                  people = decoded
                  return
@@ -37,7 +50,8 @@ class Prospect: Identifiable, Codable {
      
      private func save() {
          if let encoded = try? JSONEncoder().encode(people) {
-             UserDefaults.standard.set(encoded, forKey: key)
+       //      UserDefaults.standard.set(encoded, forKey: key)
+             try? encoded.write(to: savePath, options: [.atomic, .completeFileProtection])
          }
      }
      
@@ -46,4 +60,11 @@ class Prospect: Identifiable, Codable {
          prospect.connected.toggle()
          save()
      }
+}
+/// Challenge
+extension FileManager {
+    static var documentDirectory: URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
 }

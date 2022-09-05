@@ -9,6 +9,10 @@ import SwiftUI
 import UserNotifications
 
 struct ProspectView: View {
+    enum SortType {
+        case name, date
+    }
+    
     enum FilterType {
         case none, contacted, uncontacted
     }
@@ -25,6 +29,9 @@ struct ProspectView: View {
             return "Uncontacted people"
         }
     }
+    
+    @State private var sortOrder = SortType.date
+    @State private var isShowingSortOptions = false
     
     @EnvironmentObject var prospects: Prospects
     var filteredProspects: [Prospect] {
@@ -80,6 +87,15 @@ struct ProspectView: View {
                         }
                     }
                 }
+            }
+        }
+        .confirmationDialog("Sort by...", isPresented: $isShowingSortOptions) {
+            Button("Name (A-Z)") {
+                sortOrder = .name
+            }
+            
+            Button("Date (Newest first)") {
+                sortOrder = .date
             }
         }
         .navigationTitle(title)
