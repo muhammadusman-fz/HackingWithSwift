@@ -39,9 +39,9 @@ struct ProspectView: View {
         case .none:
             return prospects.people
         case .contacted:
-            return prospects.people.filter { $0.connected }
+            return prospects.people.filter { $0.isConnected }
         case .uncontacted:
-            return prospects.people.filter { !$0.connected }
+            return prospects.people.filter { !$0.isConnected }
         }
     }
     
@@ -57,13 +57,13 @@ struct ProspectView: View {
                                 .foregroundColor(.secondary)
                         }
                         
-                        if prospect.connected == true {
+                        if prospect.isConnected == true {
                             Spacer()
                             Image(systemName: "checkmark.circle.fill")
                         }
                     }
                     .swipeActions {
-                        if prospect.connected {
+                        if prospect.isConnected {
                             Button {
                                 prospects.toggle(prospect)
                             } label: {

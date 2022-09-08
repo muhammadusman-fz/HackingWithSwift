@@ -210,9 +210,9 @@
 		E4298F16289656C100F12CB0 = {
 			isa = PBXGroup;
 			children = (
-				E4841EE628BD8FC0002C17A6 /* Hot Prospects */,
 				E42F80A528A4931D0030520E /* ContentView.swift */,
 				E4298F22289656C100F12CB0 /* HackingWithSwiftApp.swift */,
+				E4841EE628BD8FC0002C17A6 /* Hot Prospects */,
 				E4841EE128BA5017002C17A6 /* MeetupFriend-Challenge */,
 				E4841EDC28B8AB69002C17A6 /* AccessibilityService */,
 				E4298F4C2896574F00F12CB0 /* Assets.xcassets */,

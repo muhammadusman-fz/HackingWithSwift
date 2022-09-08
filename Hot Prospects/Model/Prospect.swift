@@ -11,8 +11,7 @@ class Prospect: Identifiable, Codable {
     var id = UUID()
     var name = "Anonymous"
     var email = ""
-    fileprivate (set) var connected = false
-    
+    fileprivate (set) var isConnected = false
 }
 
  @MainActor class Prospects: ObservableObject {
@@ -32,6 +31,7 @@ class Prospect: Identifiable, Codable {
 //
 //         self.people = []
 //     }
+     
      init() {
          if let data  = try? Data(contentsOf: savePath) {
              if let decoded = try? JSONDecoder().decode([Prospect].self, from: data) {
@@ -57,10 +57,11 @@ class Prospect: Identifiable, Codable {
      
      func toggle(_ prospect: Prospect) {
          objectWillChange.send()
-         prospect.connected.toggle()
+         prospect.isConnected.toggle()
          save()
      }
 }
+
 /// Challenge
 extension FileManager {
     static var documentDirectory: URL {
